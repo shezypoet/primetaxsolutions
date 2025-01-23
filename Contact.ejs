@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Prime Tax Solutions</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Header Styling */
+        header {
+            background: #002c54;
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: flex-start; /* Align items to the left */
+            align-items: center;
+            gap: 1rem; /* Add space between logo and text */
+        }
+
+        .logo-header .logo {
+            width: 60px; /* Adjust logo size */
+            height: auto;
+            border-radius: 5px; /* Optional: Rounded corners */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .contact-section {
+            padding: 2rem;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section .contact-details {
+            margin-bottom: 2rem;
+        }
+
+        .contact-section .contact-details p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .contact-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form-container label {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form-container input,
+        .contact-form-container textarea {
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form-container textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        .contact-form-container button {
+            background-color: #004080;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form-container button:hover {
+            background-color: #002c54;
+        }
+
+        .contact-details strong {
+            display: block;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="/images/Logo/logo.webp" alt="Tax Solutions Logo" class="logo">
+            <div>
+                <h1>Prime Tax Solutions</h1>
+                <p>Your trusted partner for audit and taxation services</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact Us</a>
+    </nav>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <p><strong>Phone:</strong> +92 333 486584</p>
+            <p><strong>Email:</strong> <a href="mailto:info@primetaxsolutions.com">info@primetaxsolutions.com</a></p>
+            <p><strong>Address:</strong> Johar Town, Lahore</p>
+        </div>
+        <div class="contact-form-container">
+            <h3>Send Us a Message</h3>
+            <form action="/send-email" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Prime Tax Solutions. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
